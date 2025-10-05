@@ -1,3 +1,8 @@
+using ClassLibrary1.Interfaces;
+using ClassLibrary1.SqlDataAccess;
+using ClassLibrary1.UserData;
+using ClassLibrary1.MemberData;
+
 namespace CorruptGymWeb1000
 {
     public class Program
@@ -8,6 +13,11 @@ namespace CorruptGymWeb1000
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+
+            // Register data access services
+            builder.Services.AddScoped<ISqlDataAccess, SqlDataAccess>();
+            builder.Services.AddScoped<IUserData, UserData>();
+            builder.Services.AddScoped<IMemberData, MemberData>();
 
             var app = builder.Build();
 

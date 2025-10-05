@@ -1,0 +1,60 @@
+@page
+@model CorruptGymWeb1000.Pages.Members.DetailsModel
+@{
+    ViewData["Title"] = "Member Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            First Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.First_Name)
+        </dd>
+        <dt class="col-sm-2">
+            Last Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Last_Name)
+        </dd>
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Email)
+        </dd>
+        <dt class="col-sm-2">
+            Active
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Active)
+        </dd>
+        <dt class="col-sm-2">
+            Membership Type ID
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Membership_Type_Id)
+        </dd>
+        <dt class="col-sm-2">
+            Center ID
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Center_Id)
+        </dd>
+        <dt class="col-sm-2">
+            Birthday
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Member.Birthday)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Member?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

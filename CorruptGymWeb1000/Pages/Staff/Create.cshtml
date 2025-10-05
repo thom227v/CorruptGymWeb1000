@@ -1,0 +1,68 @@
+@page
+@model CorruptGymWeb1000.Pages.Staff.CreateModel
+@{
+    ViewData["Title"] = "Create Staff";
+}
+
+<h1>Create Staff</h1>
+
+<h4>Centers Staff</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CentersStaff.First_Name" class="control-label"></label>
+                <input asp-for="CentersStaff.First_Name" class="form-control" />
+                <span asp-validation-for="CentersStaff.First_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CentersStaff.Last_Name" class="control-label"></label>
+                <input asp-for="CentersStaff.Last_Name" class="form-control" />
+                <span asp-validation-for="CentersStaff.Last_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CentersStaff.Email" class="control-label"></label>
+                <input asp-for="CentersStaff.Email" class="form-control" />
+                <span asp-validation-for="CentersStaff.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CentersStaff.Phone_Number" class="control-label"></label>
+                <input asp-for="CentersStaff.Phone_Number" class="form-control" />
+                <span asp-validation-for="CentersStaff.Phone_Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CentersStaff.Address_Line" class="control-label"></label>
+                <input asp-for="CentersStaff.Address_Line" class="form-control" />
+                <span asp-validation-for="CentersStaff.Address_Line" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CentersStaff.Role_Name" class="control-label"></label>
+                <input asp-for="CentersStaff.Role_Name" class="form-control" />
+                <span asp-validation-for="CentersStaff.Role_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CentersStaff.Security_Level" class="control-label"></label>
+                <input asp-for="CentersStaff.Security_Level" class="form-control" />
+                <span asp-validation-for="CentersStaff.Security_Level" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="CentersStaff.Center_Access_Staff" /> Center Access
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorruptGymWeb1000", "CorruptGymWeb1000\CorruptGymWeb1000.csproj", "{C6D62E5E-A69D-4D2B-B046-8E05689874BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{AEEAFF79-A6E3-4786-B1D8-98519C55DB86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorruptGymLibrary", "CorruptGymLibrary\CorruptGymLibrary.csproj", "{B3C1CBB2-2A57-4933-841E-87A53DC5C75E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C6D62E5E-A69D-4D2B-B046-8E05689874BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6D62E5E-A69D-4D2B-B046-8E05689874BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6D62E5E-A69D-4D2B-B046-8E05689874BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEEAFF79-A6E3-4786-B1D8-98519C55DB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEEAFF79-A6E3-4786-B1D8-98519C55DB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEEAFF79-A6E3-4786-B1D8-98519C55DB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEEAFF79-A6E3-4786-B1D8-98519C55DB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C1CBB2-2A57-4933-841E-87A53DC5C75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C1CBB2-2A57-4933-841E-87A53DC5C75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C1CBB2-2A57-4933-841E-87A53DC5C75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C1CBB2-2A57-4933-841E-87A53DC5C75E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
