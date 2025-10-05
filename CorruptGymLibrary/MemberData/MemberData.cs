@@ -24,10 +24,10 @@ namespace ClassLibrary1.MemberData
 
         public async Task<Members> GetMember(int id)
         {
-            // Since there's no specific stored procedure for selecting by ID, 
-            // we'll get all members and filter by ID
-            var results = await GetMembers();
-            return results.FirstOrDefault(m => m.Id == id);
+            var results = await _db.LoadData<Members, dynamic>(
+                storedProcedure: "Client.MembersSelectById", 
+                new { Id = id });
+            return results.FirstOrDefault();
         }
 
         public Task InsertMember(Members member) => _db.SaveData(storedProcedure: "Client.MembersInsert", 
