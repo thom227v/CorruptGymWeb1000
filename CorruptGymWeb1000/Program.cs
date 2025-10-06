@@ -1,6 +1,6 @@
-using ClassLibrary1.Interfaces;
-using ClassLibrary1.SqlDataAccess;
-using ClassLibrary1.MemberData;
+using CorruptGymLibrary.Interfaces;
+using CorruptGymLibrary.SqlDataAccess;
+using CorruptGymLibrary.MemberData;
 
 namespace CorruptGymWeb1000
 {

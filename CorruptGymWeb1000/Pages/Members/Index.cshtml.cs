@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ClassLibrary1.Interfaces;
-using ClassLibrary1.Models;
+using CorruptGymLibrary.Interfaces;
+using CorruptGymLibrary.Models;
 
 namespace CorruptGymWeb1000.Pages.Members
 {
@@ -14,7 +14,7 @@ namespace CorruptGymWeb1000.Pages.Members
             _memberData = memberData;
         }
 
-        public IEnumerable<ClassLibrary1.Models.Members> Members { get; set; } = default!;
+        public IEnumerable<CorruptGymLibrary.Models.Members> Members { get; set; } = default!;
 
         public async Task OnGetAsync()
         {

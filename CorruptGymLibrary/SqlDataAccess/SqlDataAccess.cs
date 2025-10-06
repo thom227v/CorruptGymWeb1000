@@ -1,4 +1,4 @@
-﻿using ClassLibrary1.Interfaces;
+﻿using CorruptGymLibrary.Interfaces;
 using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace ClassLibrary1.SqlDataAccess
+namespace CorruptGymLibrary.SqlDataAccess
 {
     public class SqlDataAccess : ISqlDataAccess
     {

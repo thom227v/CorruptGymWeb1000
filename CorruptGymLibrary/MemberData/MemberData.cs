@@ -1,5 +1,5 @@
-using ClassLibrary1.Interfaces;
-using ClassLibrary1.Models;
+using CorruptGymLibrary.Interfaces;
+using CorruptGymLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace ClassLibrary1.MemberData
+namespace CorruptGymLibrary.MemberData
 {
     public class MemberData : IMemberData
     {
